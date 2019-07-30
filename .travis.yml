@@ -17,5 +17,5 @@ after_success:
           import BenchmarkTools, Pkg
           Pkg.add("Coverage")
           using Coverage
-          cd(normpath(dirname(pathof(BenchmarkTools)), ".."))
-          Coveralls.submit(Coveralls.process_folder())
+          #cd(normpath(dirname(pathof(BenchmarkTools)), ".."))
+          #Coveralls.submit(Coveralls.process_folder())
