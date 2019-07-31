@@ -1,0 +1,26 @@
+# TRAVIS
+
+# Documentation: http://docs.travis-ci.com/user/languages/julia/
+language: julia
+
+julia:
+  - 1.1
+  - 1.1.1
+notifications:
+  email: false
+
+before_script:
+    - julia -e 'using Pkg; Pkg.add("IJulia")'
+
+script:
+    julia hello.jl
+#    - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+#    - julia -e 'Pkg.clone(pwd()); Pkg.build("BenchmarkTools"); Pkg.test("BenchmarkTools"; coverage=true)'
+after_success:
+#    - |
+#        julia -e '
+#          import BenchmarkTools, Pkg
+#          Pkg.add("Coverage")
+#          using Coverage
+#          cd(normpath(dirname(pathof(BenchmarkTools)), ".."))
+#          Coveralls.submit(Coveralls.process_folder())
