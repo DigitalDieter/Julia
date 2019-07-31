@@ -9,7 +9,7 @@ julia:
 notifications:
   email: false
 script:
-    ./hello.jl
+    julia hello.jl
 #    - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
 #    - julia -e 'Pkg.clone(pwd()); Pkg.build("BenchmarkTools"); Pkg.test("BenchmarkTools"; coverage=true)'
 after_success:
