@@ -10,7 +10,7 @@ notifications:
   email: false
 
 before_script:
-    - julia -e 'Pkg.add("IJulia")'
+    - julia -e 'using Pkg; Pkg.add("IJulia")'
 
 script:
     julia hello.jl
