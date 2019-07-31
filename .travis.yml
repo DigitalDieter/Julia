@@ -8,6 +8,10 @@ julia:
   - 1.1.1
 notifications:
   email: false
+
+before_script:
+    - julia -e 'Pkg.add("IJulia")'
+
 script:
     julia hello.jl
 #    - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
