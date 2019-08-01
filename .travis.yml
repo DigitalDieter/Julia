@@ -10,7 +10,8 @@ notifications:
   email: false
 
 before_script:
-    - julia -e 'using Pkg; Pkg.add("IJulia")'
+    - julia -e 'using Pkg; Pkg.add.(["IJulia", "TensorFlow", "Distributions", "ProgressMeter", "MLLabelUtils", "MLDataUtils"])'
+
 
 script:
     julia hello.jl
