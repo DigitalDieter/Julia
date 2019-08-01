@@ -23,6 +23,12 @@ using Pkg
 Pkg.add("IJulia")
 ```
 
+
+Show installed packages
+```bash
+Pkg.installed()
+``
+
 #### To create an executable script copy & paste the following command into the commandline:
 
 ```bash
