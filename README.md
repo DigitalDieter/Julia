@@ -1,8 +1,16 @@
 
-![julia_logo](img/julia_logo.png)
+
+
+![julia_logo](img/julia_logo-small.png)
+
+&nbsp;
+
+[![Build Status](https://travis-ci.org/DigitalDieter/Julia.svg?branch=master)](https://travis-ci.org/DigitalDieter/Julia)
 
 ## Installation / Dependencies
-
+&nbsp;
+ &ensp;
+ &emsp;
 You need to install the following packages as Installation dependencies:
 ```bash
 # Download julia archiv
@@ -27,7 +35,7 @@ Pkg.add("IJulia")
 Show installed packages
 ```bash
 Pkg.installed()
-``
+```
 
 #### To create an executable script copy & paste the following command into the commandline:
 
@@ -43,3 +51,5 @@ chmod a+x hello.jl
 ```bash
 julia hello.jl
 ```
+
+B+
