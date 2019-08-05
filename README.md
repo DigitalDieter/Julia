@@ -37,7 +37,7 @@ Show installed packages
 Pkg.installed()
 ```
 
-#### To create an executable script copy & paste the following command into the commandline:
+#### To create an executable script copy & paste the following command into the command-line:
 
 ```bash
 dd of=hello.jl<< EOF
@@ -51,5 +51,3 @@ chmod a+x hello.jl
 ```bash
 julia hello.jl
 ```
-
-B+
