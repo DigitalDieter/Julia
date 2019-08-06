@@ -8,11 +8,14 @@
 [![Build Status](https://travis-ci.org/DigitalDieter/Julia.svg?branch=master)](https://travis-ci.org/DigitalDieter/Julia)
 
 ## Installation / Dependencies
-&nbsp;
- &ensp;
- &emsp;
+
+Using scripts/install_julia.sh for automatic julia installation
+
 You need to install the following packages as Installation dependencies:
-```bash
+
+
+
+```sh
 # Download julia archiv
 wget https://julialang-s3.julialang.org/bin/linux/x64/1.1/julia-1.1.1-linux-x86_64.tar.gz
 # Extracting julia archiv
@@ -26,7 +29,8 @@ julia
 ```
 
 To use Julia inside your jupyter notebook you have to install the following package inside the julia console:
-```bash
+
+```jl
 using Pkg
 Pkg.add("IJulia")
 ```
