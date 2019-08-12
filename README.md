@@ -56,26 +56,9 @@ chmod a+x hello.jl
 julia hello.jl
 ```
 
--
-
-tensorflow_test.jl
-- test tensorflow script
-
 
 ## Testing TensorFlow
-using TensorFlow
-using Test
-
-sess = TensorFlow.Session()
-
-x = TensorFlow.constant(Float64[1,2])
-y = TensorFlow.Variable(Float64[3,4])
-z = TensorFlow.placeholder(Float64)
-
-w = exp(x + z + -y)
-
-run(sess, TensorFlow.global_variables_initializer())
-res = run(sess, w, Dict(z=>Float64[1,2]))
-@test res[1] ≈ exp(-1)
-res[1] ≈ exp(-1)
-println(res[1] ≈ exp(-1))
+test tensorflow script
+```bash
+julia tensorflow_test.jl
+```
