@@ -95,7 +95,19 @@ julia> M =[1 2 3;4 5 6;7 8 9]
  4  5  6
  7  8  9
 ```
-
+Access element 1 row second column
+```bash
+julia> M[1,2] = 2662
+2662
+```
+Transpose of a matrix
+```bash
+julia> M'
+3×3 LinearAlgebra.Adjoint{Int64,Array{Int64,2}}:
+    1  4  7
+ 2662  5  8
+    3  6  9
+```
 
 Show installed packages
 ```bash
